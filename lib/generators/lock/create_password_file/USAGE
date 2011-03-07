@@ -1,0 +1,5 @@
+Description:
+    The lock generator is used to create an encrypted password and store it in config/lock_password
+
+Example:
+    rails g lock:create_password_file mypassword

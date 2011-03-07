@@ -15,14 +15,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "lock"
   gem.homepage = "http://github.com/johnmcaliley/lock"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Restrict access to controllers or actions using a single password}
+  gem.description = %Q{Simple engine that can lock down controllers/actions with a password.  Useful for locking a new feature (or an entire site) while it is being beta tested.}
   gem.email = "john.mcaliley@gmail.com"
   gem.authors = ["cowboycoded"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_dependency 'bcrypt-ruby'
 end
 Jeweler::RubygemsDotOrgTasks.new
 

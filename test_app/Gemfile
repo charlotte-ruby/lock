@@ -1,0 +1,21 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.0.5'
+gem 'sqlite3'
+gem 'lock', :path=>'#{File.dirname(__FILE__)}/../../'
+gem 'systemu'
+gem 'bcrypt-ruby'
+
+group :development do
+  gem "rspec"
+  gem "rspec-rails"
+  gem "mongrel", "1.2.0.pre2"
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'spork'
+  gem 'launchy'
+  gem "autotest-rails"
+  gem "autotest-notification"
+end

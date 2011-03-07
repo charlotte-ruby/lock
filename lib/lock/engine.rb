@@ -3,12 +3,11 @@ require "rails"
 
 module Lock
   class Engine < Rails::Engine
-      #rake_tasks do
-        #load "lock/railties/tasks.rake"
-      #end
-      
-      #initializer 'lock.helper' do |app|
-        #ActionView::Base.send :include, LockHelper
-      #end
+    initializer "lock.extend_application_controller" do
+      ActiveSupport.on_load(:action_controller) do
+        include LockApplicationController::InstanceMethods
+        extend LockApplicationController::ClassMethods
+      end
+    end
   end
 end
