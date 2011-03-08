@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{lock}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["cowboycoded"]
@@ -20,18 +20,25 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "app/controllers/lock_application_controller.rb",
+    "app/controllers/lock_controller.rb",
+    "app/views/lock/login.html.erb",
+    "app/views/lock/refused.html.erb",
+    "app/views/lock/unlock.html.erb",
     "config/routes.rb",
     "lib/generators/lock/create_password_file/USAGE",
     "lib/generators/lock/create_password_file/create_password_file_generator.rb",
     "lib/lock.rb",
     "lib/lock/engine.rb",
-    "lib/lock/railties/tasks.rake"
+    "lib/lock/railties/tasks.rake",
+    "lock.gemspec"
   ]
-  s.homepage = %q{http://github.com/johnmcaliley/lock}
+  s.homepage = %q{http://github.com/cowboycoded/lock}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
