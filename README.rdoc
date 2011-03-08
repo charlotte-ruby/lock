@@ -1,3 +1,4 @@
+http://c1552982.r82.cf0.rackcdn.com/images/lock-logo.png
 = lock
 
 A simple Rails 3 Engine that lets you lock down controllers, specific actions or an entire site with a password.  This engine is useful for locking down new features
