@@ -1,12 +1,11 @@
 = lock
 
 A simple Rails 3 Engine that lets you lock down controllers, specific actions or an entire site with a password.  This engine is useful for locking down new features
-or your entire site in production while your team is app is being beta tested.  This is not a full-blown user authentication engine, nor is it intended to be.
+or your entire site in production while your app is being beta tested.  This is not a full-blown user authentication engine, nor is it intended to be.
 
 == Install the gem
 
 Add to your Gemfile
-  #/your_app/Gemfile
   gem "lock"
 
 Install with bundler
@@ -29,12 +28,12 @@ If you want to lock your entire app use this:
 
 If you want to lock specific actions inside the widgets_controller use this:
   ApplicationController < ActionController::Base
-    lock, :actions=>["widgets#new","widgets#index"]
+    lock :actions=>["widgets#new","widgets#index"]
   end
 
 If you want to lock all actions in a controller, you can just leave off the # sign and action name.  The following will lock all actions in the widgets_controller
   ApplicationController < ActionController::Base
-    lock, :actions=>["widgets"]
+    lock :actions=>["widgets"]
   end
 
 == Unlock your app
