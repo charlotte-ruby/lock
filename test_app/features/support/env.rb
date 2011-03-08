@@ -1,5 +1,5 @@
 require 'rubygems'
-ENV["RAILS_ENV"] ||= "test_cuc"
+ENV["RAILS_ENV"] ||= "test"
 require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
 require 'cucumber/formatter/unicode' # Remove this line if you don't want Cucumber Unicode support
 require 'cucumber/rails/rspec'
@@ -22,3 +22,6 @@ if defined?(ActiveRecord::Base)
   rescue LoadError => ignore_if_database_cleaner_not_present
   end
 end
+
+#generate the password file
+system("rails g lock:create_password_file mypassword --force")

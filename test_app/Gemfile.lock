@@ -1,5 +1,5 @@
 PATH
-  remote: /rails_plugins/mine/lock
+  remote: #{File.dirname(__FILE__)}/../../
   specs:
     lock (0.0.0)
       bcrypt-ruby

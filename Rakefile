@@ -13,13 +13,14 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "lock"
-  gem.homepage = "http://github.com/johnmcaliley/lock"
+  gem.homepage = "http://github.com/cowboycoded/lock"
   gem.license = "MIT"
   gem.summary = %Q{Restrict access to controllers or actions using a single password}
   gem.description = %Q{Simple engine that can lock down controllers/actions with a password.  Useful for locking a new feature (or an entire site) while it is being beta tested.}
   gem.email = "john.mcaliley@gmail.com"
   gem.authors = ["cowboycoded"]
   gem.add_dependency 'bcrypt-ruby'
+  gem.files.exclude 'test_app'  
 end
 Jeweler::RubygemsDotOrgTasks.new
 

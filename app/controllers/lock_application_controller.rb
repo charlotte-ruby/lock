@@ -9,11 +9,10 @@ module LockApplicationController
     def lock_filter(actions=nil)
       if locked_action?(actions) and session[:lock_opened]!=true
         redirect_to unlock_refused_url
-      end 
+      end
       #otherwise proceed to where ya going
     end
     
-    private
     def locked_action?(actions)
       return false if controller_name=="lock"
       actions.blank? or actions.include?("#{controller_name}") or actions.include?("#{controller_name}##{action_name}")
