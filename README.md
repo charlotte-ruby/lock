@@ -28,16 +28,19 @@ Lock your app
 You lock your app in the ApplicationController (/app/controllers/application_controller.rb).
 
 If you want to lock your entire app use this:
+
     ApplicationController < ActionController::Base
       lock
     end
 
 If you want to lock specific actions inside the widgets_controller use this:
+
     ApplicationController < ActionController::Base
       lock :actions=>["widgets#new","widgets#index"]
     end
 
 If you want to lock all actions in a controller, you can just leave off the # sign and action name.  The following will lock all actions in the widgets_controller
+
     ApplicationController < ActionController::Base
       lock :actions=>["widgets"]
     end
