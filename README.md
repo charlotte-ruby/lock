@@ -1,4 +1,4 @@
-![Lock Logo](https://github.com/cowboycoded/lock/blob/master/logo.png?raw=true)
+![Lock Logo](https://github.com/charlotte-ruby/lock/blob/master/logo.png?raw=true)
 
 lock
 ====
