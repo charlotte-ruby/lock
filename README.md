@@ -10,9 +10,11 @@ Install the gem
 ---------------
 
 Add to your Gemfile
+
     gem "lock"
 
 Install with bundler
+
     bundle install
 
 Generate the password file
