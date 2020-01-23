@@ -1,7 +1,7 @@
 PATH
-  remote: #{File.dirname(__FILE__)}/../../
+  remote: ..
   specs:
-    lock (0.0.0)
+    lock (0.1.0)
       bcrypt-ruby
 
 GEM
@@ -88,10 +88,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mini_portile2 (2.4.0)
     mongrel (1.2.0.pre2)
       daemons (~> 1.0.10)
       gem_plugin (~> 0.2.3)
-    nokogiri (1.4.4)
+    nokogiri (1.10.7)
+      mini_portile2 (~> 2.4.0)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
