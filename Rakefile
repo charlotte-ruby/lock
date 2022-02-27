@@ -20,8 +20,9 @@ Jeweler::Tasks.new do |gem|
   gem.email = "john.mcaliley@gmail.com"
   gem.authors = ["cowboycoded"]
   gem.add_dependency 'bcrypt-ruby'
-  gem.files.exclude 'test_app'  
+  gem.files.exclude 'test_app'
 end
+
 Jeweler::RubygemsDotOrgTasks.new
 
 require 'rspec/core'
