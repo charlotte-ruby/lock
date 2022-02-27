@@ -5,20 +5,25 @@ require_relative "lib/lock/version"
 Gem::Specification.new do |spec|
   spec.name = "lock"
   spec.version = Lock::VERSION
-  spec.authors = ['cowboycoded', 'invalidusrname']
+  spec.authors = %w[cowboycoded invalidusrname]
   spec.email = ["john.mcaliley@gmail.com"]
 
   spec.summary = "Restrict access to controllers or actions using a single password"
-  spec.description = "Simple engine that can lock down controllers/actions with a password.  Useful for locking a new feature (or an entire site) while it is being beta tested."
+  spec.description = <<-ENDOFSTRING
+  Simple engine that can lock down controllers/actions with a password.
+  Useful for locking a new feature (or an entire site)
+  while it is being beta tested
+  ENDOFSTRING
+
   spec.homepage = "http://github.com/charlotte-ruby/lock"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.5"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
-  spec.metadata['changelog_uri'] = File.join(spec.homepage, 'blob/master/CHANGELOG.md')
+  spec.metadata["changelog_uri"] = File.join(spec.homepage, "blob/master/CHANGELOG.md")
 
-  spec.extra_rdoc_files = ["LICENSE.txt", "README.rdoc" ]
+  spec.extra_rdoc_files = ["LICENSE.txt", "README.rdoc"]
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -32,8 +37,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "bcrypt", "~> 3.1.5"
-  spec.add_dependency 'rails', '>= 5'
-  #spec.add_development_dependency "rspec-rails"
+  spec.add_dependency "rails", ">= 5"
+  # spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "systemu"
 end

@@ -42,7 +42,6 @@ RSpec.configure do |config|
   # config.filter_run_when_matching :focus
 end
 
-
 def copy_password_template_file
   FileUtils.copy("#{File.dirname(__FILE__)}/resources/lock_password", "#{Rails.root}/config/lock_password")
 end

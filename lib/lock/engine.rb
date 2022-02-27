@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Lock
   class Engine < ::Rails::Engine
     initializer "lock.extend_application_controller" do

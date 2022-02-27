@@ -34,5 +34,4 @@ RSpec.describe Lock do
 
     expect(result).not_to eq(nil)
   end
-
 end

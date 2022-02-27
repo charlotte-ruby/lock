@@ -1,4 +1,6 @@
-require 'bcrypt'
+# frozen_string_literal: true
+
+require "bcrypt"
 
 module Lock
   class CreatePasswordFileGenerator < Rails::Generators::Base
