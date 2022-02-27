@@ -46,7 +46,7 @@ If you want to lock specific actions inside the widgets_controller use this:
 
 ```ruby
 ApplicationController < ActionController::Base
-  lock :actions=>["widgets#new","widgets#index"]
+  lock actions: ["widgets#new", "widgets#index"]
 end
 ```
 
@@ -54,7 +54,7 @@ If you want to lock all actions in a controller, you can just leave off the # si
 
 ```ruby
 ApplicationController < ActionController::Base
-  lock :actions=>["widgets"]
+  lock actions: ["widgets"]
 end
 ```
 
