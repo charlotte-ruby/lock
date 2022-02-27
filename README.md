@@ -93,6 +93,5 @@ The layout must contain a yield.
 Copyright
 ---------
 
-Copyright (c) 2011 cowboycoded. See LICENSE.txt for
+Copyright (c) 2011-2022 cowboycoded and the Charlotte Ruby User Group. See LICENSE.txt for
 further details.
-
