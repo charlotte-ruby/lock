@@ -1,9 +1,10 @@
 ![Lock Logo](https://github.com/charlotte-ruby/lock/blob/master/logo.png?raw=true)
 
-lock
-====
+# Lock
 
-A simple Rails 3 Engine that lets you lock down controllers, specific actions or an entire site with a password.  This engine is useful for locking down new features
+![Ruby](https://github.com/charlotte-ruby/lock/workflows/ruby/badge.svg)
+
+A simple Rails Engine that lets you lock down controllers, specific actions or an entire site with a password.  This engine is useful for locking down new features
 or your entire site in production while your app is being beta tested.  This is not a full-blown user authentication engine, nor is it intended to be.
 
 Install the gem
