@@ -1,8 +1,7 @@
-require "lock"
-require "rails"
+# frozen_string_literal: true
 
 module Lock
-  class Engine < Rails::Engine
+  class Engine < ::Rails::Engine
     initializer "lock.extend_application_controller" do
       ActiveSupport.on_load(:action_controller) do
         include LockApplicationController::InstanceMethods
