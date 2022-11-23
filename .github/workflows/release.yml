@@ -8,7 +8,7 @@ jobs:
     env:
       GEM_NAME: "lock"
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v
+      - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
         with:
           release-type: ruby
