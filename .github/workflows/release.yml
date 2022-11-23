@@ -5,13 +5,16 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      GEM_NAME: "lock"
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v2
+      - uses: GoogleCloudPlatform/release-please-action@v
         id: release
         with:
           release-type: ruby
-          package-name: rails-lock
+          package-name: ${{ env.GEM_NAME }}
           bump-minor-pre-major: true
+          version-file: "lib/${{ env.GEM_NAME }}/version.rb"
       - uses: actions/checkout@v2
         if: steps.release.outputs.release_created
       - uses: ruby/setup-ruby@v1
