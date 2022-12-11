@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [0.1.2](https://github.com/charlotte-ruby/lock/compare/v0.1.2...v0.1.2) (2022-12-11)
+
+
+### Miscellaneous Chores
+
+* release 0.1.2 ([12e89b3](https://github.com/charlotte-ruby/lock/commit/12e89b39c8fa78d45aee7c78d1ed7298ef884566))
+
 ## [0.1.2](https://github.com/charlotte-ruby/lock/compare/v0.1.1...v0.1.2) (2022-12-11)
 
 
