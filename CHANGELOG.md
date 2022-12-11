@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [0.1.2](https://github.com/charlotte-ruby/lock/compare/v0.1.1...v0.1.2) (2022-12-11)
+
+
+### Bug Fixes
+
+* update README in Gem::Specification ([28f0453](https://github.com/charlotte-ruby/lock/commit/28f0453c4783f8fed6a796f9fcdaf0f8274a9989))
+
 ## [0.1.1](https://github.com/charlotte-ruby/lock/compare/v0.1.0...v0.1.1) (2022-12-11)
 
 
