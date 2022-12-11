@@ -2,7 +2,7 @@
 
 # Lock
 
-![Ruby](https://github.com/charlotte-ruby/lock/workflows/ruby/badge.svg)
+[![ruby](https://github.com/charlotte-ruby/lock/actions/workflows/ruby.yml/badge.svg)](https://github.com/charlotte-ruby/lock/actions/workflows/ruby.yml)
 
 A simple Rails Engine that lets you lock down controllers, specific actions or an entire site with a password.  This engine is useful for locking down new features
 or your entire site in production while your app is being beta tested.  This is not a full-blown user authentication engine, nor is it intended to be.
