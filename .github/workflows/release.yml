@@ -15,10 +15,6 @@ jobs:
           release-type: ruby
           package-name: "${{ env.GEM_NAME }}"
       - uses: actions/checkout@v3
-      - name: remove Gemfile.lock
-        if: "${{ steps.release.outputs.release_created }}"
-        run: |
-          rm Gemfile.lock
       - name: install ruby
         if: "${{ steps.release.outputs.release_created }}"
         uses: ruby/setup-ruby@v1
